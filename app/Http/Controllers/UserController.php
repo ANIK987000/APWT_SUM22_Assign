@@ -66,14 +66,17 @@ class UserController extends Controller
         $this->validate($req,
         [
            
-            "email"=>"required",
-            "password"=>"required|min:8"
+            "email"=>"required|email",
+            "password"=>"required|min:8|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/",
+
             
         ],
         [
-           
-            "email.required"=>"Provide Your Email",
-            "password.required"=>"Provide Your Password"
+           "email.required"=>"Please provide your email",
+            "email.regex"=>"Please provide valid email",
+            "password.required"=>"Please provide your password",
+            "password.regex"=>"Password must contain upper case, lower case, number and special
+            characters, minimum length 8 ",
            
             
         ]);
