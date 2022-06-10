@@ -19,28 +19,23 @@
 <table align="center"> 
     <tr>
         <td>Name</td>
-        <td> {{$name}}</td>
+        <td> {{$user->name}}</td>
     </tr>
     <tr>
         <td>ID</td>
-        <td>{{$id}}</td>
+        <td>{{$user->id}}</td>
     </tr>
     <tr>
         <td>Email</td>
-        <td>{{$email}}</td>
+        <td>{{$user->email}}</td>
     </tr>
     <tr>
         <td>Password</td>
-        <td>{{$password}}</td>
+        <td>{{$user->password}}</td>
     </tr>
     <tr><td>Type</td>
-        <td>{{$type}}</td>
+        <td>{{$user->type}}</td>
     </tr>
 </table>
-   <!-- Name : {{$name}}<br>
-   ID   : {{$id}}<br>
-   Email: {{$email}}<br>
-   Password: {{$password}}<br>
-   Type: {{$type}}<br> -->
-
+   
 @endsection

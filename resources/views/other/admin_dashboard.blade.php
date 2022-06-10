@@ -25,7 +25,7 @@
         </tr>
         @foreach($admin as $u)
             <tr>
-                <td><a href="{{route('other.userDetails',['name'=>$u->name,'id'=>$u->id,'email'=>$u->email,'password'=>$u->password,'type'=>$u->type])}}">{{$u->name}}</a></td>
+                <td><a href="{{route('other.userDetails',['id'=>$u->id])}}">{{$u->name}}</a></td>
                 <!-- <td>{{$u->id}}</td>
                 <td>{{$u->email}}</td>
                 <td>{{$u->password}}</td>
@@ -44,7 +44,7 @@
         </tr>
         @foreach($user as $u)
             <tr>
-                <td><a href="{{route('other.userDetails',['name'=>$u->name,'id'=>$u->id,'email'=>$u->email,'password'=>$u->password,'type'=>$u->type])}}">{{$u->name}}</a></td>
+                <td><a href="{{route('other.userDetails',['id'=>$u->id])}}">{{$u->name}}</a></td>
                 <!-- <td>{{$u->id}}</td>
                 <td>{{$u->email}}</td>
                 <td>{{$u->password}}</td>

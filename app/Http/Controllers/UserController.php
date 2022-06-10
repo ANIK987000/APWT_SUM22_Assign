@@ -133,21 +133,21 @@ class UserController extends Controller
 
     }
     
-    function userDetails(Request $req)
-    {
-        return view('other.userDetails')
-        ->with('name',$req->name)
-        ->with('id',$req->id)
-        ->with('email',$req->email)
-        ->with('password',$req->password)
-        ->with('type',$req->type);
-    }
-
     // function userDetails(Request $req)
     // {
-    //     $user = User::where('id', '=', $req->id)->first();
     //     return view('other.userDetails')
-    //     ->with('user',$user);
-        
+    //     ->with('name',$req->name)
+    //     ->with('id',$req->id)
+    //     ->with('email',$req->email)
+    //     ->with('password',$req->password)
+    //     ->with('type',$req->type);
     // }
+
+    function userDetails(Request $req)
+    {
+        $user = User::where('id', '=', $req->id)->first();
+        return view('other.userDetails')
+        ->with('user',$user);
+        
+    }
 }
