@@ -75,8 +75,7 @@ class UserController extends Controller
            "email.required"=>"Please provide your email",
             "email.regex"=>"Please provide valid email",
             "password.required"=>"Please provide your password",
-            "password.regex"=>"Password must contain upper case, lower case, number and special
-            characters, minimum length 8 ",
+            "password.regex"=>"Password is incorrect !!!",
            
             
         ]);
