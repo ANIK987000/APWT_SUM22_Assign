@@ -1,4 +1,4 @@
-<h3>Main Dashboard Page</h3>
+<h3 style="text-align:center">Main Dashboard</h3>
 @extends('main.main1')
 @section('content')
 
@@ -14,7 +14,7 @@
     }
 </style>
 
-<table>
+<table align="center">
         <tr>
             <th>NAME</th>
             <!-- <th>ID</th>
