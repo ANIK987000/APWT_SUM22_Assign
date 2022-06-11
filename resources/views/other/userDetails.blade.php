@@ -1,4 +1,4 @@
-<h3 style="text-align:center">User Details Here !!!  <br><br></h3>
+<h3 style="text-align:center"> Individual User Details  <br><br></h3>
 
 @extends('main.main1')
 @section('content')
@@ -15,7 +15,7 @@
     }
 </style>
 
-<h3 style="text-align:center">Individual Details <br><br></h3>
+
 <table align="center"> 
     <tr>
         <td>Name</td>

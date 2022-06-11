@@ -1,4 +1,4 @@
-<h3 style="text-align:center">Main Dashboard</h3>
+<h3 style="text-align:center">All User Details</h3>
 @extends('main.main1')
 @section('content')
 
