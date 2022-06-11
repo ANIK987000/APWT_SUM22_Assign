@@ -17,18 +17,18 @@
 <table align="center">
         <tr>
             <th>NAME</th>
-            <!-- <th>ID</th>
+            <th>ID</th>
             <th>Email</th>
             <th>Password</th>
-            <th>Type</th> -->
+            <th>Type</th>
         </tr>
         @foreach($users as $u)
             <tr>
-                <td><a href="{{route('other.userDetails',['id'=>$u->id])}}">{{$u->name}}</a></td>
-                <!-- <td>{{$u->id}}</td>
+                <td>{{$u->name}}</a></td>
+                <td>{{$u->id}}</td>
                 <td>{{$u->email}}</td>
                 <td>{{$u->password}}</td>
-                <td>{{$u->type}}</td> -->
+                <td>{{$u->type}}</td>
             </tr>
         @endforeach
     </table>

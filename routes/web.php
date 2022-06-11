@@ -27,5 +27,6 @@ Route::Post('/login',[UserController::class,'loginPost'])->name('other.loginPost
 Route::get('/dashboard',[UserController::class,'dashboard'])->name('other.dashboard');
 Route::get('/admin_dashboard',[UserController::class,'adminDashboard'])->name('other.admin_dashboard');
 Route::get('/user_dashboard',[UserController::class,'userDashboard'])->name('other.user_dashboard');
-Route::get('/user/details/',[UserController::class,'userDetails'])->name('other.userDetails');
+Route::get('/user/details/all',[UserController::class,'allUserDetails'])->name('other.allUserDetails');
+Route::get('/user/details/{id}',[UserController::class,'userDetails'])->name('other.userDetails');
 

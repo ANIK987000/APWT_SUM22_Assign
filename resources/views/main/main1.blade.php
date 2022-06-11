@@ -13,7 +13,7 @@
         <a href="{{route('other.dashboard')}}">Dashboard</a>
         <a href="{{route('other.admin_dashboard')}}">Admin Dashboard</a>
         <a href="{{route('other.user_dashboard')}}">User Dashboard</a>
-       <a href="{{route('other.userDetails')}}">User Details</a>
+        <a href="{{route('other.allUserDetails')}}">User Details</a>
 
         </div>
         <br>

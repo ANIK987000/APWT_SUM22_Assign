@@ -150,4 +150,12 @@ class UserController extends Controller
         ->with('user',$user);
         
     }
+    function allUserDetails()
+    {
+        $user=User::all();
+        //return $user;
+        return view('other.allUserDetails')
+                    ->with('users',$user);
+        
+    }
 }
